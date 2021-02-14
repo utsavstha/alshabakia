@@ -12,6 +12,8 @@ print("SERVER STARTED")
 @client.on(events.NewMessage(chats="shehabtelegram"))
 async def my_event_handler(event):
     print("new event")
+    if "أخبار غزة الآن" in event.raw_text:
+        return
     if "حماسفلسطين" in event.raw_text or "حماس" in event.raw_text or "فتح" in event.raw_text or "احتلال" in event.raw_text or "غزه" in event.raw_text or "خان يونس " in event.raw_text or "معبر رفح " in event.raw_text or "حماس" in event.raw_text or "رفح" in event.raw_text or "الجهاد الاسلامي " in event.raw_text or "انفاق" in event.raw_text:
             print("Posted from shehabtelegram")
             await client.send_message('alshabakia', event.raw_text)
