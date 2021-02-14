@@ -19,6 +19,8 @@ async def my_event_handler(event):
 @client.on(events.NewMessage(chats="gazanewsnow"))
 async def my_event_handler(event):
     print("new event")
+    if "أخبار غزة الآن" in event.raw_text:
+        return
     if "حماسفلسطين" in event.raw_text or "حماس" in event.raw_text or "فتح" in event.raw_text or "احتلال" in event.raw_text or "غزه" in event.raw_text or "خان يونس " in event.raw_text or "معبر رفح " in event.raw_text or "حماس" in event.raw_text or "رفح" in event.raw_text or "الجهاد الاسلامي " in event.raw_text or "انفاق" in event.raw_text:
             print("Posted from gazanewsnow")
             await client.send_message('alshabakia', event.raw_text)
@@ -26,6 +28,8 @@ async def my_event_handler(event):
 @client.on(events.NewMessage(chats="ajMubasher"))
 async def my_event_handler(event):
     print("new event")
+    if "أخبار غزة الآن" in event.raw_text:
+        return
     if "حماسفلسطين" in event.raw_text or "حماس" in event.raw_text or "فتح" in event.raw_text or "احتلال" in event.raw_text or "غزه" in event.raw_text or "خان يونس " in event.raw_text or "معبر رفح " in event.raw_text or "حماس" in event.raw_text or "رفح" in event.raw_text or "الجهاد الاسلامي " in event.raw_text or "انفاق" in event.raw_text:
             print("Posted from ajMubasher")
             await client.send_message('alshabakia', event.raw_text)
@@ -33,6 +37,8 @@ async def my_event_handler(event):
 @client.on(events.NewMessage(chats="ajanews"))
 async def my_event_handler(event):
     print("new event")
+    if "أخبار غزة الآن" in event.raw_text:
+        return
     if "حماسفلسطين" in event.raw_text or "حماس" in event.raw_text or "فتح" in event.raw_text or "احتلال" in event.raw_text or "غزه" in event.raw_text or "خان يونس " in event.raw_text or "معبر رفح " in event.raw_text or "حماس" in event.raw_text or "رفح" in event.raw_text or "الجهاد الاسلامي " in event.raw_text or "انفاق" in event.raw_text:
             print("Posted from ajanews")
             await client.send_message('alshabakia', event.raw_text)
@@ -40,6 +46,8 @@ async def my_event_handler(event):
 @client.on(events.NewMessage(chats="hamasps"))
 async def my_event_handler(event):
     print("new event")
+    if "أخبار غزة الآن" in event.raw_text:
+        return
     if "حماسفلسطين" in event.raw_text or "حماس" in event.raw_text or "فتح" in event.raw_text or "احتلال" in event.raw_text or "غزه" in event.raw_text or "خان يونس " in event.raw_text or "معبر رفح " in event.raw_text or "حماس" in event.raw_text or "رفح" in event.raw_text or "الجهاد الاسلامي " in event.raw_text or "انفاق" in event.raw_text:
             print("Posted from hamasps")
             await client.send_message('alshabakia', event.raw_text)
